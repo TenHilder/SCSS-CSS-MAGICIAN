@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-color: white;
+  height: 15vmax;
+}
+
+.main-content {
+  background: #F6EBDA;
+  height: 25vmax;
+  width: 100%;
+}
+.main-content .img-main {
+  height: 25vmax;
+  width: auto;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+}
+.main-content .content img {
+  height: 25vmax;
+  width: auto;
+  left: 20vmax;
+  margin-top: -4%;
+  position: absolute;
+  z-index: 3;
+  border: 5px solid #FAF3E9;
+  border-radius: 18px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.main-content .main-title {
+  width: 25vmax;
+  margin-left: 55vmax;
+  padding-top: 3px;
+}
+.main-content .main-title h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.main-content .main-title h4 span {
+  text-decoration: underline;
+  text-decoration-color: #FF902A;
+  text-decoration-thickness: 3px;
+}
+.main-content .main-title h5 {
+  margin-top: -26px;
+  font-size: 16px;
+}
+.main-content .main-title p {
+  font-size: 15px;
+  margin-top: -15px;
+  color: #A4A099;
+  width: 30vmax;
+}
+.main-content .order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 27px;
+  font-weight: bold;
+  background: #2F2105;
+  color: #F2AC26;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.product-title h5 {
+  font-size: 20px;
+  margin-left: 13%;
+}
+.product-title h5 span {
+  text-decoration: underline;
+  text-decoration-color: #FF902A;
+  text-decoration-thickness: 3px;
+}
+
+.product-atas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-atas .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -30vmax;
+  gap: 50px;
+}
+.product-atas .card-1 {
+  background: white;
+  padding: 6px;
+  position: relative;
+  border-radius: 8px;
+  width: 20vmax;
+  height: 23vmax;
+  margin: 10px auto;
+  filter: drop-shadow(0px 0px 10px RGBA(0, 0, 0, 0.2));
+}
+.product-atas .card-1 .badge {
+  display: inline-block;
+  left: 15px;
+  top: 15px;
+  padding: 5px 6px;
+  width: 50px;
+  height: 20px;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 3px solid gray;
+  background-color: white;
+  color: brown;
+  font-size: 14px;
+  position: absolute;
+  z-index: 3;
+}
+
+.card-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.card-kiri {
+  position: absolute;
+  margin-top: 14vmax;
+  left: 17px;
+  width: 160px;
+}
+.card-kiri h4 {
+  color: brown;
+  margin-bottom: -2px;
+}
+.card-kiri p {
+  color: #A4A099;
+  font-size: 14px;
+}
+
+.card-kanan {
+  position: absolute;
+  margin-top: 14vmax;
+  right: 20px;
+}
+.card-kanan h4 {
+  color: brown;
+}
+.card-kanan .card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+}
+.card-kanan .icon {
+  background-color: orange;
+  padding: 4px;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-bawah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-bawah .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 29vmax;
+  margin-bottom: 5vmax;
+  gap: 50px;
+}
+.product-bawah .card-1 {
+  background: white;
+  padding: 6px;
+  position: relative;
+  border-radius: 8px;
+  width: 20vmax;
+  height: 23vmax;
+  margin: 10px auto;
+  filter: drop-shadow(0px 0px 10px RGBA(0, 0, 0, 0.2));
+}
+.product-bawah .card-1 .badge {
+  display: inline-block;
+  left: 15px;
+  top: 15px;
+  padding: 5px 6px;
+  width: 50px;
+  height: 20px;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 3px solid gray;
+  background-color: white;
+  color: brown;
+  font-size: 14px;
+  position: absolute;
+  z-index: 3;
+}/*# sourceMappingURL=style.css.map */

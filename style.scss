@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+$mainColor:#F6EBDA;
+$secondColor:brown;
+$thirdcolor:#A4A099;
+
+@mixin flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    background-color: white;
+    height: 15vmax;
+}
+
+.main-content {
+    background: $mainColor;
+    height: 25vmax;
+    width: 100%;
+
+    .img-main {
+        height: 25vmax;
+        width: auto;
+        position: absolute;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    .content img{
+        height: 25vmax;
+        width: auto;
+        left: 20vmax;
+        margin-top: -4%;
+        position: absolute;
+        z-index: 3;
+        border: 5px solid #FAF3E9;
+        border-radius:18px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-title{
+        width: 25vmax;
+        margin-left: 55vmax;
+        padding-top: 3px;
+
+       } 
+    .main-title h4{
+        font-size: 20px;
+        padding-bottom: 15px;
+        span {
+            text-decoration: underline;
+            text-decoration-color:#FF902A ;
+            text-decoration-thickness:3px ;
+        }
+    }
+
+    .main-title h5{
+        margin-top: -26px;
+        font-size: 16px;
+    }
+
+    .main-title p{
+        font-size: 15px;
+        margin-top: -15px;
+        color: $thirdcolor;
+        width: 30vmax;
+    }
+
+    .order-button{
+        @include flex-box();
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 27px;
+        font-weight: bold;
+        background: #2F2105;
+        color: #F2AC26;
+        padding: 8px 20px;
+        border-radius: 20px;
+        border: 0;
+    }
+}
+
+.product-title h5{
+    font-size: 20px;
+    margin-left: 13%;
+    span {
+        text-decoration: underline;
+        text-decoration-color:#FF902A ;
+        text-decoration-thickness:3px ;
+    }
+}
+
+.product-atas{
+    @include flex-box();
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin-bottom: -30vmax;
+        gap: 50px; 
+    }
+
+    .card-1{
+        background: white;
+        padding: 6px;
+        position: relative;
+        border-radius: 8px;
+        width: 20vmax; 
+        height: 23vmax;
+        margin:10px auto;
+        filter: drop-shadow(0px 0px 10px RGBA(0,0,0,0.2));
+
+        .badge {
+            display: inline-block;
+            left: 15px;
+            top: 15px;
+            padding: 5px 6px;
+            width: 50px; 
+            height: 20px;
+            font-weight: bold;
+            border-radius: 40px; 
+            border: 3px solid gray;
+            background-color: white; 
+            color: $secondColor;
+            font-size: 14px; 
+            position: absolute;
+            z-index: 3;
+        }
+
+        
+    }
+    }
+
+    .card-img-container{
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .card-1 img{
+        @include flex-box();
+        position: absolute;
+        z-index: 1;
+        margin-top: 50px;
+        position: relative;
+        border-radius: 7px;
+    }
+    .card-kiri{
+        position: absolute;
+        margin-top:14vmax;
+        left: 17px;
+        width: 160px;
+
+        h4{
+            color: $secondColor;
+            margin-bottom: -2px;
+        }
+
+        p{
+            color: $thirdcolor;
+            font-size: 14px;
+        }
+    }
+    .card-kanan{
+        position: absolute;
+        margin-top:14vmax;
+        right: 20px;
+
+        h4{
+            color: $secondColor;
+        }
+        .card-button{
+            @include flex-box();
+            font-size: 15px;
+            gap: 8px;
+            border: 0;
+            background: transparent;
+        }
+
+            .icon{
+                background-color: orange;
+                padding: 4px;
+                border-radius: 100%;
+                width: 25px;
+                height: 25px;
+                font-weight: bold;
+                @include flex-box();
+            }
+        }
+
+        .product-bawah{
+            @include flex-box();
+        
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                margin-top: 29vmax;
+                margin-bottom: 5vmax;
+                gap: 50px; 
+            }
+        
+            .card-1{
+                background: white;
+                padding: 6px;
+                position: relative;
+                border-radius: 8px;
+                width: 20vmax; 
+                height: 23vmax;
+                margin:10px auto;
+                filter: drop-shadow(0px 0px 10px RGBA(0,0,0,0.2));
+        
+                .badge {
+                    display: inline-block;
+                    left: 15px;
+                    top: 15px;
+                    padding: 5px 6px;
+                    width: 50px; 
+                    height: 20px;
+                    font-weight: bold;
+                    border-radius: 40px; 
+                    border: 3px solid gray;
+                    background-color: white; 
+                    color: $secondColor;
+                    font-size: 14px; 
+                    position: absolute;
+                    z-index: 3;
+                }
+        
+                
+            }
+            }
